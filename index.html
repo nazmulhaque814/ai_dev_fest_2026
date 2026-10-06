@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tender Package Builder</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+
+    <div>
+      <h1>📄 Tender Package Builder</h1>
+      <p>
+        Prepare, check and generate your tender document package.
+      </p>
+    </div>
+
+    <button id="languageBtn">বাংলা</button>
+
+  </header>
+
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <div>
+
+        <span class="badge">
+          Tender Assistant
+        </span>
+
+        <h2>
+          Build a complete tender package
+        </h2>
+
+        <p>
+          Upload your requirements and documents,
+          match them and check every requirement.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Upload Cards -->
+    <section class="upload-grid">
+
+      <!-- Requirements -->
+      <div class="upload-card">
+
+        <div class="icon">📋</div>
+
+        <h3>
+          Requirements
+        </h3>
+
+        <p>
+          Upload requirements.json
+        </p>
+
+        <input
+          type="file"
+          id="requirementsInput"
+          accept=".json"
+        >
+
+      </div>
+
+
+      <!-- Documents -->
+      <div class="upload-card">
+
+        <div class="icon">📁</div>
+
+        <h3>
+          Documents
+        </h3>
+
+        <p>
+          Upload PDF documents
+        </p>
+
+        <input
+          type="file"
+          id="documentsInput"
+          accept=".pdf,application/pdf"
+          multiple
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- Tender Details -->
+    <section
+      id="tenderSection"
+      class="panel"
+      hidden
+    >
+
+      <div class="section-header">
+
+        <div>
+
+          <span class="badge">
+            Tender Information
+          </span>
+
+          <h2 id="tenderTitle">
+            Tender Details
+          </h2>
+
+          <p id="tenderInfo"></p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Tender information -->
+      <div
+        id="tenderDetails"
+        class="tender-details"
+      ></div>
+
+
+      <!-- Requirements -->
+      <h3 class="requirements-heading">
+        Required Documents
+      </h3>
+
+      <div id="requirementsList"></div>
+
+    </section>
+
+
+    <!-- Uploaded Documents -->
+    <section
+      id="documentsSection"
+      class="panel"
+      hidden
+    >
+
+      <div class="section-header">
+
+        <div>
+
+          <h2>
+            Uploaded Documents
+          </h2>
+
+          <p id="documentCount">
+            0 documents
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div id="documentsList"></div>
+
+    </section>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
