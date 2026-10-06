@@ -17,12 +17,15 @@
 
     <div>
       <h1>📄 Tender Package Builder</h1>
+
       <p>
         Prepare, check and generate your tender document package.
       </p>
     </div>
 
-    <button id="languageBtn">বাংলা</button>
+    <button id="languageBtn">
+      বাংলা
+    </button>
 
   </header>
 
@@ -58,7 +61,9 @@
       <!-- Requirements -->
       <div class="upload-card">
 
-        <div class="icon">📋</div>
+        <div class="icon">
+          📋
+        </div>
 
         <h3>
           Requirements
@@ -80,7 +85,9 @@
       <!-- Documents -->
       <div class="upload-card">
 
-        <div class="icon">📁</div>
+        <div class="icon">
+          📁
+        </div>
 
         <h3>
           Documents
@@ -128,17 +135,16 @@
       </div>
 
 
-      <!-- Tender information -->
       <div
         id="tenderDetails"
         class="tender-details"
       ></div>
 
 
-      <!-- Requirements -->
       <h3 class="requirements-heading">
         Required Documents
       </h3>
+
 
       <div id="requirementsList"></div>
 
@@ -176,6 +182,13 @@
   </main>
 
 
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- PDF-lib -->
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+
+  <!-- App -->
   <script src="app.js"></script>
 
 </body>
